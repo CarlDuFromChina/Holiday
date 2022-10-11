@@ -1,0 +1,48 @@
+<!--pages/user/user.wxml-->
+<view class="u-container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName" style="padding-left: 30px;"></open-data>
+    </block>
+  </view>
+  <view class="module">
+    <view class="module-item" bindtap="goHoliday">
+      <icon class="icon" type="search" size="45"></icon>
+      <text class="module-item-title">纪念日</text>
+    </view>
+    <view class="module-item">
+      <icon class="icon" type="search" size="45"></icon>
+      <text class="module-item-title">搜索</text>
+    </view>
+    <view class="module-item">
+      <icon class="icon" type="search" size="45"></icon>
+      <text class="module-item-title">搜索</text>
+    </view>
+    <view class="module-item">
+      <icon class="icon" type="search" size="45"></icon>
+      <text class="module-item-title">搜索</text>
+    </view>
+    <view class="module-item">
+      <icon class="icon" type="search" size="45"></icon>
+      <text class="module-item-title">搜索</text>
+    </view>
+    <view class="module-item">
+      <icon class="icon" type="search" size="45"></icon>
+      <text class="module-item-title">搜索</text>
+    </view>
+  </view>
+  <swiper class="swiper">
+    <swiper-item>
+      <view class="swiper-item-a">A</view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-item-b">B</view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-item-c">C</view>
+    </swiper-item>
+  </swiper>
+</view>

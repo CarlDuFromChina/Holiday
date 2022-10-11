@@ -1,0 +1,6 @@
+<!--pages/holiday/holiday.wxml-->
+<view class="container">
+    <view wx:for="{{holidays}}">
+      <input auto-focus placeholder="输入事件名称" bindinput="eventInputHandler" value="{{item.name}}"/>
+    </view>
+</view>
